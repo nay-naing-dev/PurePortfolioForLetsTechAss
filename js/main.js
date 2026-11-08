@@ -108,33 +108,14 @@ function createProjectCard(project) {
     const card = createElement('article', 'project-card');
     card.dataset.projectId = project.id;
 
-    const meta = createElement('div', 'card-meta');
-    meta.append(createElement('span', 'badge badge-category', project.category));
-    if (project.status) {
-        meta.append(createElement('span', 'badge badge-status', project.status));
-    }
-
-    const detailsLink = createElement('a', 'button button-primary card-details', 'View details');
-    detailsLink.href = getProjectUrl(project);
-    detailsLink.append(createElement('span', 'visually-hidden', ` for ${project.title}`), createArrowIcon('right'));
-
-    const sourceLink = createElement('a', 'card-link', 'Source');
-    sourceLink.href = project.sourceUrl;
-    sourceLink.append(createElement('span', 'visually-hidden', ` code for ${project.title}`));
-
-    const actions = createElement('div', 'card-actions');
-    actions.append(detailsLink, sourceLink);
+    const link = createElement('a', 'card-overlay-link');
+    link.href = getProjectUrl(project);
 
     const body = createElement('div', 'card-body');
-    body.append(
-        meta,
-        createElement('h3', 'card-title', project.title),
-        createElement('p', 'card-description', project.summary),
-        createTechList(project.technologies),
-        actions
-    );
+    body.append(createElement('h3', 'card-title', project.title));
 
-    card.append(createProjectCover(project, 'card-cover'), body);
+    link.append(createProjectCover(project, 'card-cover'), body);
+    card.append(link);
     return card;
 }
 
