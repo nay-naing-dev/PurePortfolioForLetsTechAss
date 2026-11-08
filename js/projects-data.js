@@ -108,7 +108,7 @@ const projects = [
         ],
         category: 'Games',
         technologies: ['Godot 4', 'GDScript', 'Agentic AI coding'],
-        sourceUrl: `${GITHUB_URL}/TaumgooEmpire`,
+        sourceUrl: `${GITHUB_URL}/TaunGooEmpire`,
         demoUrl: '',
         status: 'Demo, in progress',
         cover: { hue: 40, label: '1550' },
