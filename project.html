@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Nay Naing</title>
+    <meta name="description" content="Project details from the portfolio of Nay Naing, a full-stack JavaScript developer in training.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="expect" href="#site-footer" blocking="render">
+    <script src="js/theme-init.js"></script>
+    <script src="js/projects-data.js"></script>
+    <script src="js/transitions.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="assets/favicon.svg" alt="" width="32" height="32">
+                <span class="logo-text">
+                    <span class="logo-name">Nay Naiiiiii</span>
+                    <span class="logo-status">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span>Active<span class="status-sep" aria-hidden="true"> · </span><span class="visually-hidden">, </span>Open to work</span>
+                    </span>
+                </span>
+            </a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+                    <span class="menu-icon" aria-hidden="true"></span>
+                    <span class="menu-toggle-text">Menu</span>
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-pressed="false">
+                <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                    <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/>
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="4.5" fill="currentColor"/>
+                    <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/>
+                    </g>
+                </svg>
+                <span class="theme-toggle-text">Dark mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <article class="container project-detail" id="project-detail">
+            <noscript>
+                <p>Turn on JavaScript to see this project's details, or <a href="index.html#projects">go back to all projects</a>.</p>
+            </noscript>
+        </article>
+    </main>
+
+    <script src="js/site.js"></script>
+    <script src="js/project-detail.js"></script>
+
+    <footer class="site-footer" id="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Nay Naing. Built with HTML, CSS and vanilla JavaScript.</p>
+        </div>
+    </footer>
+</body>
+</html>
